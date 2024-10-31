@@ -1,7 +1,7 @@
 const NavnbarComponent = () => {
   return (
     <div>
-      NavnbarComponent
+      NavbarComponent
     </div>
   )
 }

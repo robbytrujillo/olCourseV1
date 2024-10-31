@@ -13,6 +13,7 @@ import FaqPage from "./pages/FaqPage";
 function App() {
   return <div>
     <NavbarComponent /> 
+    
     <Routes>
       <Route path = "/" Component={HomePage} />
       <Route path = "/kelas" Component={KelasPage} />
