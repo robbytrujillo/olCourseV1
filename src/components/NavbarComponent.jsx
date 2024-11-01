@@ -12,7 +12,7 @@ const NavnbarComponent = () => {
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="mx-auto">
             {navLinks.map((link) => {
               return( 
               <div key={link.id}>
@@ -21,6 +21,10 @@ const NavnbarComponent = () => {
               );
             })}
           </Nav>
+
+          <div>
+            <button>Join With Us</button>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
