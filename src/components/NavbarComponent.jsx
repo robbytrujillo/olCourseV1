@@ -1,6 +1,7 @@
 import {Navbar, Container, Nav} from 'react-bootstrap';
 
 import {navLinks} from '../data/index';
+import {NavLink} from 'react-router-dom'
 
 const NavnbarComponent = () => {
   return (
@@ -13,13 +14,12 @@ const NavnbarComponent = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             {navLinks.map((link) => {
-              return( <div>
-                <Nav.Link href="#home">Home</Nav.Link>
+              return( 
+              <div key={link.id}>
+                <NavLink to={link.path}>{link.text}</NavLink>
               </div>
               );
             })}
-            <Nav.Link href="#home">Home</Nav.Link>
-            
           </Nav>
         </Navbar.Collapse>
       </Container>
