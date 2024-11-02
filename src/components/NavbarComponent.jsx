@@ -15,7 +15,7 @@ const NavnbarComponent = () => {
           <Nav className="mx-auto">
             {navLinks.map((link) => {
               return( 
-              <div key={link.id}>
+              <div className='nav-link' key={link.id}>
                 <NavLink to={link.path}>{link.text}</NavLink>
               </div>
               );
