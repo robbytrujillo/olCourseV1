@@ -7,7 +7,7 @@ const NavnbarComponent = () => {
   return (
     <div>
       {/* <Navbar expand="lg" className="bg-body-tertiary"> */}
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg">
       <Container>
         <Navbar.Brand href="#home">Course</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -16,7 +16,10 @@ const NavnbarComponent = () => {
             {navLinks.map((link) => {
               return( 
               <div className='nav-link' key={link.id}>
-                <NavLink to={link.path}>{link.text}</NavLink>
+                <NavLink to={link.path}  className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""} end>
+                  {link.text}
+                </NavLink>
               </div>
               );
             })}
