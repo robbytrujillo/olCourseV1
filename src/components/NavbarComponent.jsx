@@ -9,7 +9,7 @@ const NavnbarComponent = () => {
       {/* <Navbar expand="lg" className="bg-body-tertiary"> */}
       <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Course</Navbar.Brand>
+        <Navbar.Brand href="#home" className='fs-3 fw-bold'>Course</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
@@ -26,7 +26,7 @@ const NavnbarComponent = () => {
           </Nav>
 
           <div>
-            <button>Join With Us</button>
+            <button className='btn btn-outline-danger rounded-1'>Join With Us</button>
           </div>
         </Navbar.Collapse>
       </Container>
