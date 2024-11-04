@@ -12,7 +12,7 @@ const NavnbarComponent = () => {
         <Navbar.Brand href="#home" className='fs-3 fw-bold'>Course</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto">
+          <Nav className="mx-auto text-center">
             {navLinks.map((link) => {
               return( 
               <div className='nav-link' key={link.id}>
@@ -25,7 +25,7 @@ const NavnbarComponent = () => {
             })}
           </Nav>
 
-          <div>
+          <div className='text-center'>
             <button className='btn btn-outline-danger rounded-1'>Join With Us</button>
           </div>
         </Navbar.Collapse>
