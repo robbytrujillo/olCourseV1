@@ -1,9 +1,20 @@
+import {useState, useEffect} from 'react';
 import {Navbar, Container, Nav} from 'react-bootstrap';
 
 import {navLinks} from '../data/index';
 import {NavLink} from 'react-router-dom'
 
 const NavnbarComponent = () => {
+  const [changeColor, setChangeColor] = useState(false);
+
+  const changeBackgroundColor = () => {
+    if (window.scrollY > 10) {
+      setChangeColor(true);
+    } else {
+      setChangeColor(false);
+    }
+  };
+
   return (
     <div>
       {/* <Navbar expand="lg" className="bg-body-tertiary"> */}
@@ -16,15 +27,14 @@ const NavnbarComponent = () => {
             {navLinks.map((link) => {
               return( 
               <div className='nav-link' key={link.id}>
-                <NavLink to={link.path}  className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""} end>
+                <NavLink to={link.path} className={({ isActive, isPending }) =>
+                  (isPending ? "pending" : isActive ? "active" : "")} end>
                   {link.text}
                 </NavLink>
               </div>
               );
             })}
           </Nav>
-
           <div className='text-center'>
             <button className='btn btn-outline-danger rounded-1'>Join With Us</button>
           </div>
