@@ -1,5 +1,5 @@
 import {Container, Row, Col} from 'react-bootstrap';
-import HeroImage from '../assets/img/img4.png';
+import HeroImage from '../assets/img/fw.svg';
 
 const HomePage = () => {
   return (
@@ -20,8 +20,14 @@ const HomePage = () => {
         </Container>
       </header>
       <div className="kelas w-100 min-vh-100">
-          
-        </div>
+        <Container>
+          <Row>
+            <Col>
+              <h1>Kelas Terbaru</h1>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   )
 }
