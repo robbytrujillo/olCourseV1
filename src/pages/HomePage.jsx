@@ -23,7 +23,8 @@ const HomePage = () => {
         <Container>
           <Row>
             <Col>
-              <h1>Kelas Terbaru</h1>
+              <h1 className='text-center fw-bold'>Kelas Terbaru</h1>
+              <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, minus?</p>
             </Col>
           </Row>
         </Container>
