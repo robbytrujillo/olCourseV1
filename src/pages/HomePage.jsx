@@ -1,3 +1,5 @@
+import {} from 'react-bootstrap';
+
 const HomePage = () => {
   return (
     <div className="homepage">
