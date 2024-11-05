@@ -15,10 +15,16 @@ const NavnbarComponent = () => {
     }
   };
 
+  useEffect(()=> {
+    changeBackgroundColor();
+
+    window.addEventListener('scroll', changeBackgroundColor);
+  });
+
   return (
     <div>
       {/* <Navbar expand="lg" className="bg-body-tertiary"> */}
-      <Navbar expand="lg">
+      <Navbar expand="lg" className={changeColor ? 'color-active' : ''}>
       <Container>
         <Navbar.Brand href="#home" className='fs-3 fw-bold'>ihbsCounter.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
