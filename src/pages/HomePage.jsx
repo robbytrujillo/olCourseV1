@@ -27,6 +27,11 @@ const HomePage = () => {
               <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, minus?</p>
             </Col>
           </Row>
+          <Row>
+            <Col>
+            
+            </Col>
+          </Row>
         </Container>
       </div>
     </div>
