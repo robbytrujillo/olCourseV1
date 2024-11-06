@@ -1,6 +1,8 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import HeroImage from '../assets/img/fw.svg';
 
+import {kelasTerbaru} from '../data/index'
+
 const HomePage = () => {
   return (
     <div className="homepage">
@@ -14,7 +16,7 @@ const HomePage = () => {
               <button className='btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2'>Lihat Promo</button>
             </Col>
             <Col lg='6' className='pt-lg-0 pt-5'>
-            <img src={HeroImage} alt="hero-img" />
+              <img src={HeroImage} alt="hero-img" />
             </Col>
           </Row>
         </Container>
@@ -28,9 +30,13 @@ const HomePage = () => {
             </Col>
           </Row>
           <Row>
-            <Col>
-            
-            </Col>
+            {kelasTerbaru.map((kelas) => {
+              return ( <Col key={kelas.id}>
+              <img src={kelas.image} alt="unplash.com" />
+               </Col>
+              );
+            })}
+           
           </Row>
         </Container>
       </div>
