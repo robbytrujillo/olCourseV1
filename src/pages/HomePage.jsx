@@ -31,9 +31,17 @@ const HomePage = () => {
           </Row>
           <Row>
             {kelasTerbaru.map((kelas) => {
-              return ( <Col key={kelas.id}>
-              <img src={kelas.image} alt="unplash.com" />
-               </Col>
+              return ( 
+              <Col key={kelas.id}>
+                <img src={kelas.image} alt="unplash.com" />
+                  <div>
+                    <i className={kelas.star1}></i>
+                    <i className={kelas.star2}></i>
+                    <i className={kelas.star3}></i>
+                    <i className={kelas.star4}></i>
+                    <i className={kelas.star5}></i>
+                  </div>
+              </Col>
               );
             })}
            
