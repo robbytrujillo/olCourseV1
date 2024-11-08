@@ -56,7 +56,18 @@ const HomePage = () => {
           <Row>
             <Col className='text-center'>
               <button className='btn btn-success rounded-5 btn-lg' onClick={()=> navigate('/kelas')}>Lihat Semua Kelas<i className='fa-solid fa-chevron-right ms-1'></i></button>
-              
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      {/* TEstimonial Page */}
+      <div className="testimonial py-5">
+        <Container>
+          <Row>
+            <Col>
+              <h1 className='text-center fw-bold my-5'>
+                Testimonial
+              </h1>
             </Col>
           </Row>
         </Container>
