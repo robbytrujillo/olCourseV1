@@ -60,7 +60,9 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
-      {/* TEstimonial Page */}
+      {/* End Kelas Page */}
+
+      {/* Start Testimonial Page */}
       <div className="testimonial py-5">
         <Container>
           <Row>
@@ -72,6 +74,8 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
+      {/* End Testimonial Page */}
+
     </div>
   )
 }
