@@ -33,13 +33,18 @@ const HomePage = () => {
             {kelasTerbaru.map((kelas) => {
               return ( 
               <Col key={kelas.id}>
-                <img src={kelas.image} alt="unplash.com" />
-                  <div>
+                <img src={kelas.image} alt="unplash.com" className='w-100 mb-5 rounded-top' />
+                  <div className='star mb-2'>
                     <i className={kelas.star1}></i>
                     <i className={kelas.star2}></i>
                     <i className={kelas.star3}></i>
                     <i className={kelas.star4}></i>
                     <i className={kelas.star5}></i>
+                  </div>
+                  <h5 className='mb-5 px-3'>{kelas.title}</h5>
+                  <div>
+                    <p>{kelas.price}</p>
+                    <button>{kelas.buy}</button>
                   </div>
               </Col>
               );
