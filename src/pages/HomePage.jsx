@@ -11,7 +11,7 @@ const HomePage = () => {
     <div className="homepage">
       <header className="w-100 min-vh-100 d-flex align-items-center">
         <Container>
-          <Row className='header-box d-flex align-items-center'>
+          <Row className='header-box d-flex align-items-center pt-lg-5'>
             <Col lg='6'>
               <h1 className='mb-4'>Temukan <br/> <span>Bakat Minatmu</span> <br /> Bersama Kami</h1>
               <p className='mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, distinctio expedita numquam molestias fuga veritatis!</p>
@@ -58,6 +58,7 @@ const HomePage = () => {
               <button className='btn btn-success rounded-5 btn-lg' onClick={()=> navigate('/kelas')}>Lihat Semua Kelas<i className='fa-solid fa-chevron-right ms-1'></i></button>
             </Col>
           </Row>
+
         </Container>
       </div>
       {/* End Kelas Page */}
