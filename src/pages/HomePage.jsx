@@ -120,7 +120,7 @@ const HomePage = () => {
                     <div className='people'>
                       <img src={data.image} alt="" />
                       <div>
-                        <h5>{data.name}</h5>
+                        <h5 className='mb-1'>{data.name}</h5>
                         <p>{data.skill}</p>
                       </div>
                     </div>
