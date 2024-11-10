@@ -121,7 +121,7 @@ const HomePage = () => {
                       <img src={data.image} alt="" />
                       <div>
                         <h5 className='mb-1'>{data.name}</h5>
-                        <p>{data.skill}</p>
+                        <p className='m-0 fw-bold'>{data.skill}</p>
                       </div>
                     </div>
                   </SwiperSlide>
