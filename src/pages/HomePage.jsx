@@ -115,9 +115,9 @@ const HomePage = () => {
             >
               {dataSwiper.map((data) => {
                 return(
-                  <SwiperSlide key={data.id} className='shadow rounded'>
-                    <p>{data.desc}</p>
-                    <div>
+                  <SwiperSlide key={data.id} className='shadow-sm'>
+                    <p className='desc'>{data.desc}</p>
+                    <div className='people'>
                       <img src={data.image} alt="" />
                       <div>
                         <h5>{data.name}</h5>
