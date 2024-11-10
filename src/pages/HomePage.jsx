@@ -47,7 +47,7 @@ const HomePage = () => {
           <Row>
             {kelasTerbaru.map((kelas) => {
               return ( 
-              <Col key={kelas.id}>
+              <Col key={kelas.id} className='shadow rounded'>
                 <img src={kelas.image} alt="unplash.com" className='w-100 mb-5 rounded-top' />
                   <div className='star mb-2 px-3'>
                     <i className={kelas.star1}></i>
@@ -94,15 +94,19 @@ const HomePage = () => {
               }}
               breakpoints={{
                 640: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                   spaceBetween: 20,
                 },
                 768: {
-                  slidesPerView: 4,
+                  slidesPerView: 2,
                   spaceBetween: 40,
                 },
-                1024: {
-                  slidesPerView: 5,
+                992: {
+                  slidesPerView: 2,
+                  spaceBetween: 50,
+                },
+                1200: {
+                  slidesPerView: 3,
                   spaceBetween: 50,
                 },
               }}
@@ -111,8 +115,15 @@ const HomePage = () => {
             >
               {dataSwiper.map((data) => {
                 return(
-                  <SwiperSlide key={data.id}>
-                    Slide1
+                  <SwiperSlide key={data.id} className='shadow rounded'>
+                    <p>{data.desc}</p>
+                    <div>
+                      <img src={data.image} alt="" />
+                      <div>
+                        <h5>{data.name}</h5>
+                        <p>{data.skill}</p>
+                      </div>
+                    </div>
                   </SwiperSlide>
                 ) 
               })}
