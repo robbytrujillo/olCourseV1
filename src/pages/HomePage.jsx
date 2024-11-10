@@ -1,8 +1,20 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import HeroImage from '../assets/img/fw.svg';
 
-import {kelasTerbaru} from '../data/index';
+import {kelasTerbaru, dataSwiper} from '../data/index';
 import {useNavigate} from 'react-router-dom';
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import './styles.css';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 const HomePage = () => {
   let navigate = useNavigate();
@@ -72,6 +84,40 @@ const HomePage = () => {
                 Testimonial
               </h1>
             </Col>
+          </Row>
+          <Row>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 50,
+                },
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              {dataSwiper.map((data) => {
+                return(
+                  <SwiperSlide key={data.id}>
+                    Slide1
+                  </SwiperSlide>
+                ) 
+              })}
+              {/* <SwiperSlide>Slide 1</SwiperSlide> */}
+            </Swiper>
           </Row>
         </Container>
       </div>
