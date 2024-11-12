@@ -3,6 +3,7 @@ import HeroImage from '../assets/img/fw.svg';
 
 import {kelasTerbaru, dataSwiper} from '../data/index';
 import {useNavigate} from 'react-router-dom';
+import FaqComponent from '../components/FaqComponent';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -133,6 +134,10 @@ const HomePage = () => {
         </Container>
       </div>
       {/* End Testimonial Page */}
+
+      {/* Start Section FAQ */}
+        <FaqComponent />
+      {/* End Section FAQ */}
     </div>
   )
 }
