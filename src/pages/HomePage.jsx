@@ -133,7 +133,6 @@ const HomePage = () => {
         </Container>
       </div>
       {/* End Testimonial Page */}
-
     </div>
   )
 }
