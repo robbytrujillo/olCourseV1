@@ -13,13 +13,12 @@ const FaqComponent = () => {
             </h2>
           </Col>
         </Row>
-        <Row>
-         
+        <Row className='row-cols-lg-2 row-cols-1 g-4 pt-5'>
             {/* Fully Collapsed State */}
             {faq.map((data) => {
               return(
                 <Col key={data.id}>
-                  <Accordion>
+                  <Accordion className='shadow-sm'>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>Accordion Item #1</Accordion.Header>
                       <Accordion.Body>
