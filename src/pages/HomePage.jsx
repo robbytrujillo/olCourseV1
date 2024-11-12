@@ -135,6 +135,7 @@ const HomePage = () => {
       </div>
       {/* End Testimonial Page */}
 
+      {/* Fully Collapsed State */}
       {/* Start Section FAQ */}
         <FaqComponent />
       {/* End Section FAQ */}
