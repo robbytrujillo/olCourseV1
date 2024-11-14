@@ -30,7 +30,9 @@ const FooterComponent = () => {
             <Link to='faq'>FAQ</Link>
             <Link to='syaratketentuan'>Syarat & Ketentuan</Link>
           </Col>
-          <Col></Col>
+          <Col>
+            <h5>Subscripe untuk imfo menarik</h5>
+          </Col>
         </Row>
       </Container>
     </div>
