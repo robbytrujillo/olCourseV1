@@ -31,7 +31,18 @@ const FooterComponent = () => {
             <Link to='syaratketentuan'>Syarat & Ketentuan</Link>
           </Col>
           <Col>
-            <h5>Subscripe untuk imfo menarik</h5>
+            <h5 className='fw-bold mb-3'>Subscripe untuk imfo menarik</h5>
+            <div className='subscribes'>
+              <input type="text" placeholder='Subscribe...' />
+              <button className='btn btn-danger rounded-end rounded-0'>Subscribe</button>
+            </div>
+            <div className='social mt-3'>
+                <i className='fa-brands fa-facebook'></i>
+                <i className='fa-brands fa-twitter'></i>
+                <i className='fa-brands fa-linkedin'></i>
+                <i className='fa-brands fa-youtube'></i>
+              
+            </div>
           </Col>
         </Row>
       </Container>
