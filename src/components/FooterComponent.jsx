@@ -5,7 +5,7 @@ const FooterComponent = () => {
   return (
     <div className='footer py-5'>
       <Container>
-        <Row>
+        <Row className='d-flex justify-content-between'>
           <Col>
             <h3 className='fw-bold'>ihbsCounter.</h3>
             <p className='desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum aliquid voluptatibus cumque ut maxime cupiditate odit ullam asperiores omnis!</p>
