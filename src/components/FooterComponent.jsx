@@ -6,7 +6,7 @@ const FooterComponent = () => {
     <div className='footer py-5'>
       <Container>
         <Row className='d-flex justify-content-between'>
-          <Col>
+          <Col lg='5'>
             <h3 className='fw-bold'>ihbsCounter.</h3>
             <p className='desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum aliquid voluptatibus cumque ut maxime cupiditate odit ullam asperiores omnis!</p>
             <div className='no mb-1 mt-4'>
@@ -22,7 +22,7 @@ const FooterComponent = () => {
               </Link>
             </div>
           </Col>
-          <Col className='d-flex flex-column col-lg-2 col'>
+          <Col className='d-flex flex-column col-lg-2 col mt-lg-0 mt-5'>
             <h5 className='fw-bold'>Menu</h5>
             <Link to=''>Home</Link>
             <Link to='kelas'>Kelas</Link>
@@ -30,7 +30,7 @@ const FooterComponent = () => {
             <Link to='faq'>FAQ</Link>
             <Link to='syaratketentuan'>Syarat & Ketentuan</Link>
           </Col>
-          <Col>
+          <Col lg='4' className='mt-lg-0 mt-5'>
             <h5 className='fw-bold mb-3'>Subscripe untuk imfo menarik</h5>
             <div className='subscribes'>
               <input type="text" placeholder='Subscribe...' />
