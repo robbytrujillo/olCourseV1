@@ -41,8 +41,12 @@ const FooterComponent = () => {
                 <i className='fa-brands fa-twitter'></i>
                 <i className='fa-brands fa-linkedin'></i>
                 <i className='fa-brands fa-youtube'></i>
-              
             </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p className='text-center px-md-0 px-3'>&copy; Copyright {new Date().getFullYear()} by <span className='fw-bold'>ihbsCounter</span> - All rights reserved.</p>
           </Col>
         </Row>
       </Container>
