@@ -32,7 +32,7 @@ const HomePage = () => {
               <button className='btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2'>Lihat Promo</button>
             </Col>
             <Col lg='6' className='pt-lg-0 pt-5'>
-              <img src={HeroImage} alt="hero-img" />
+              <img src={HeroImage} alt="hero-img" className='animate__animated animate__fadeInUp' />
             </Col>
           </Row>
         </Container>
