@@ -48,7 +48,7 @@ const HomePage = () => {
           <Row>
             {kelasTerbaru.map((kelas) => {
               return ( 
-              <Col key={kelas.id} className='shadow rounded' data-aos="fade-up" data-aos-duration='1000'>
+              <Col key={kelas.id} className='shadow rounded' data-aos="fade-up" data-aos-duration='1000' data-aos-delay={kelas.delay}>
                 <img src={kelas.image} alt="unplash.com" className='w-100 mb-5 rounded-top' />
                   <div className='star mb-2 px-3'>
                     <i className={kelas.star1}></i>
