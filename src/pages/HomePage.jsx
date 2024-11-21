@@ -67,8 +67,8 @@ const HomePage = () => {
             })}
           </Row>
           <Row>
-            <Col className='text-center'>
-              <button className='btn btn-success rounded-5 btn-lg' onClick={()=> navigate('/kelas')}>Lihat Semua Kelas<i className='fa-solid fa-chevron-right ms-1'></i></button>
+            <Col className='text-center' >
+              <button className='btn btn-success rounded-5 btn-lg' data-aos='fade-up' data-aos-duration='1000' onClick={()=> navigate('/kelas')}>Lihat Semua Kelas<i className='fa-solid fa-chevron-right ms-1'></i></button>
             </Col>
           </Row>
 
